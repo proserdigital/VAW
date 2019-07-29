@@ -1,0 +1,367 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+
+/* navbar code style start */
+
+#navtop .active {
+    font-weight: bold;
+}
+
+#navtop .signlogbtn {
+    background: none;
+}
+
+
+/* july 27 changes start*/
+
+
+/* remove bg-light class */
+
+#navtop .signlogbtn {
+    border: solid 1px #00CEFF;
+    color: #00CEFF;
+    padding: .10rem .1rem;
+    font-size: .875rem;
+    line-height: 0.7;
+    border-radius: .4rem;
+}
+
+#navtop .signlogbtn a {
+    color: #00CEFF;
+}
+
+#navtop .signlogbtn:hover {
+    border: solid 1px #787887;
+}
+
+#navtop .signlogbtn a:hover {
+    color: #787887;
+}
+
+#navtop {
+    border-bottom: solid 1px #eaeaf1;
+}
+
+#carouselExampleControls .img-responsive.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #carouselExampleControls .img-responsive {
+        display: none;
+    }
+    #carouselExampleControls .img-responsive.mobile {
+        display: block;
+    }
+}
+
+
+/* july 27 changes end */
+
+
+/* navbar code style end */
+
+
+/* home page searchboxes code style start */
+
+
+/* july 27 changes start */
+
+
+/* Style the input container */
+
+#searchboxes .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid 1px #ccc9c9;
+    border-radius: none;
+}
+
+
+/* Style the form icons */
+
+#searchboxes .icon {
+    padding: 10px;
+    background: #ffffff;
+    color: #9e9797;
+    min-width: 50px;
+    text-align: center;
+    line-height: 22px;
+}
+
+
+/* july 27 changes end */
+
+
+/* Style the input fields */
+
+#searchboxes .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+#searchboxes .input-container:focus {
+    border: 2px solid gray;
+    border-radius: none;
+}
+
+
+/* Set a style for the submit button */
+
+#searchboxes .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#searchboxes .btn:hover {
+    opacity: 1;
+}
+
+
+/* home page searchboxes code style end */
+
+
+/* top deals and offers style start */
+
+#topdeals .container-fluid {
+    max-width: 1200px;
+}
+
+#topdeals .card {
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#topdeals .card img {
+    width: 100%;
+}
+
+#topdeals [class*="row"] {
+    margin-bottom: 1em;
+    justify-content: center;
+}
+
+#topdeals h3 {
+    /*  color: #C2A061; */
+}
+
+#topdeals h4 {
+    color: #00CEFF;
+}
+
+@media screen and (max-width: 767px) {
+    #topdeals h3 {
+        font-size: 1.4rem;
+    }
+    #topdeals h4 {
+        font-size: 1.2rem;
+    }
+    #topdeals {
+        position: relative;
+        top: -10px;
+    }
+}
+
+
+/* july 27 changes start */
+
+#topdeals [class*="col-"] {
+    /*
+    background: #efefef;
+    border: 1px solid #ddd;
+    padding-bottom: .75rem;
+    padding-top: .75rem; */
+    width: 100%;
+}
+
+#topdeals .card-text {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#topdeals a:after {
+    content: ' \203A';
+}
+
+#topdeals a {
+    color: #00CEFF;
+    font-weight: 500;
+}
+
+@media (min-width: 576px) {
+    #topdeals .card-deck {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+#topdeals .btn-successs {
+    background: #C2A061;
+    color: white;
+}
+
+#topdeals ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#topdeals ul li {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+#topdeals .fobo {
+    font-style: bold !important;
+}
+
+#topdeals .modal-footer .btn a {
+    color: white !important;
+}
+
+
+/* july 27 changes end */
+
+
+/* top deals and offers style end */
+
+
+/* footer code style start */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+
+/* footer code style end */
+
+
+/* from style start */
+
+#signuplogin {
+    position: relative;
+    bottom: 25px;
+}
+
+#signuplogin .customcolor,
+#signuplogin .nav-pills .nav-link.active {
+    background: #00CEFF;
+    border: #00CEFF;
+}
+
+#signuplogin .border-primary {
+    border-color: #e2dbdb !important;
+}
+
+
+/* from style end */
+
+
+/* search result style start */
+
+#filtermenu .container-fluid {
+    background: #C2A061;
+    padding: 0;
+}
+
+#filtermenu select {
+    background: white;
+    font-weight: 500;
+    color: #C2A061;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+#individualVA {
+    background: #E8E8E8;
+}
+
+#individualVA .indiva {
+    background: white;
+    margin: 25px 0px;
+}
+
+#individualVA .photo img {
+    margin: auto;
+    display: block;
+}
+
+#individualVA .maininfo {
+    text-align: center;
+}
+
+#individualVA .maininfo h4 {
+    color: #00CEFF;
+}
+
+#individualVA .maininfo h6 {
+    margin-bottom: 0.1rem;
+}
+
+#individualVA .maininfo ul {
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+#individualVA .maininfo ul li {
+    display: inline;
+    margin: 0 5px;
+    background: #E8E8E8;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#individualVA .otherinfo {
+    text-align: center;
+}
+
+#individualVA .customcolor {
+    background: #00CEFF;
+    border: #00CEFF;
+    margin: 20px;
+}
+
+#individualVA select {
+    background: white;
+    font-weight: 500;
+    color: #C2A061;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#individualVA label {
+    font-weight: 500;
+}
+
+
+/* search result style end */
+
+
+/* confirm appointment style start */
+
+#confirm_body {
+    background: #E8E8E8;
+    height: 600px;
+}
+
+
+/* confirm appointment style end */
