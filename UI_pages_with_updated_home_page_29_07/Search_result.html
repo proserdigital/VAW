@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="customstyle.css" />
+    <link rel="stylesheet" href="Search_result.css" />
     <title>VA-Search Result Page</title>
-
 </head>
 
 <body>
@@ -31,10 +31,13 @@
                             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Search_result.html">Search Result</a>
+                            <a class="nav-link" href="Search_result.html">List of Consultant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="confirm_appointment.html">Confirm Booking</a>
+                            <a class="nav-link" href="confirm_appointment.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="viewprofile.html">View Profile</a>
                         </li>
 
 
@@ -156,11 +159,12 @@
 
     <!--Individual Virtual adviser box code start-->
 
+
     <div id="individualVA" class="mb-5">
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 indiva">
+            <div class="row text-center">
+                <div class="col-xl-8 indiva mb-0 border-bottom">
                     <div class="row">
                         <div class="col-lg-2 photo">
                             <img src="images/Vishal.png" class="img-fluid p-2" />
@@ -169,15 +173,21 @@
                             <h4>Mr. Vishal Joshi</h4>
                             <h6>Specialty is Direct Taxation and Auditing</h6>
                             <h6>20 years experience overall</h6>
+                            <br/>
                             <ul>
                                 <li>Service 1</li>
                                 <li>Service 2</li>
                                 <li>Service 3</li>
                             </ul>
-                            <br/><br/>
 
-                            <label>Calender Time: </label><br/>
+
+                            <!-- <label>Calender Time: </label><br/>
                             <input type="datetime-local" value="2000-07-01T12:00" />
+                            
+
+
+
+
                             <br/><br/>
 
                             <select>
@@ -196,13 +206,13 @@
                                     <option value="">
                                             Video Call
                                      </option>
-                             </select>
-                            <br/><br/>
+                             </select> 
+                            <br/><br/> -->
 
 
                         </div>
-                        <div class="col-lg-4 otherinfo">
-                            <button class="btn btn-primary customcolor">Book an Apointment</button>
+                        <div class="col-xl-4 otherinfo">
+                            <button class="btn btn-primary customcolor mx-auto d-block" data-toggle="collapse" data-target="#demo">Book1 an Apointment</button>
                         </div>
                     </div>
 
@@ -210,6 +220,320 @@
                 <div class="col-lg-4">
 
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 indiva mt-0">
+                    <div id="demo" class="collapse">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Today, Sat 3 Aug</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tom, Sun 4 Aug</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Mon, 5 Aug</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+                                <div class="row">
+                                    <div class="col-12 text-center py-3">
+                                        <h6>Select a time slot to book an appointment</h6>
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/morning.png" class="mr-1" /> Morning
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <button class="btn btn-sm btn-info my-2"><a href="confirm_appointment.html">10:00 AM</a></button> <button class="btn btn-sm btn-info my-2">10:30 AM</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-sm btn-info my-2">10:30 AM</button> <button class="btn btn-sm btn-info my-2">11:00 AM</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-sm btn-info my-2">11:00 AM</button> <button class="btn btn-sm btn-info my-2">11:30 AM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/afternoon.png" class="mr-1" /> Afternoon
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:00 PM</button> <button class="btn btn-sm btn-info my-2">02:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:30 PM</button> <button class="btn btn-sm btn-info my-2">03:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">03:00 PM</button> <button class="btn btn-sm btn-info my-2">03:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/evening.png" class="mr-1" /> Evening
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:00 PM</button> <button class="btn btn-sm btn-info my-2">05:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:30 PM</button> <button class="btn btn-sm btn-info my-2">06:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">06:30 PM</button> <button class="btn btn-sm btn-info my-2">07:00 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/night.png" class="mr-1" /> Night
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:00 PM</button> <button class="btn btn-sm btn-info my-2">08:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:30 PM</button> <button class="btn btn-sm btn-info my-2">09:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">09:00 PM</button> <button class="btn btn-sm btn-info my-2">09:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 group-end">
+                                    <a class="btn btn-info btnNext">Next</a>
+                                </div>
+                                <!--/. form element wrap -->
+
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+
+                                <div class="row">
+                                    <div class="col-12 text-center py-3">
+                                        <h6>Select a time slot to book an appointment</h6>
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/morning.png" class="mr-1" /> Morning
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">10:00 AM</button> <button class="btn btn-sm btn-info my-2">10:30 AM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">10:30 AM</button> <button class="btn btn-sm btn-info my-2">11:00 AM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">11:00 AM</button> <button class="btn btn-sm btn-info my-2">11:30 AM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/afternoon.png" class="mr-1" /> Afternoon
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:00 PM</button> <button class="btn btn-sm btn-info my-2">02:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:30 PM</button> <button class="btn btn-sm btn-info my-2">03:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">03:00 PM</button> <button class="btn btn-sm btn-info my-2">03:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/evening.png" class="mr-1" /> Evening
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:00 PM</button> <button class="btn btn-sm btn-info my-2">05:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:30 PM</button> <button class="btn btn-sm btn-info my-2">06:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">06:30 PM</button> <button class="btn btn-sm btn-info my-2">07:00 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/night.png" class="mr-1" /> Night
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:00 PM</button> <button class="btn btn-sm btn-info my-2">08:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:30 PM</button> <button class="btn btn-sm btn-info my-2">09:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">09:00 PM</button> <button class="btn btn-sm btn-info my-2">09:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 group-end">
+                                    <a class="btn btn-info btnPrevious">Previous</a>
+                                    <a class="btn btn-info btnNext">Next</a>
+                                </div>
+                                <!--/. form element wrap -->
+
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+                                <div class="row">
+                                    <div class="col-12 text-center py-3">
+                                        <h6>Select a time slot to book an appointment</h6>
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/morning.png" class="mr-1" /> Morning
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">10:00 AM</button> <button class="btn btn-sm btn-info my-2">10:30 AM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">10:30 AM</button> <button class="btn btn-sm btn-info my-2">11:00 AM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">11:00 AM</button> <button class="btn btn-sm btn-info my-2">11:30 AM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/afternoon.png" class="mr-1" /> Afternoon
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:00 PM</button> <button class="btn btn-sm btn-info my-2">02:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">02:30 PM</button> <button class="btn btn-sm btn-info my-2">03:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">03:00 PM</button> <button class="btn btn-sm btn-info my-2">03:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row border-bottom">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/evening.png" class="mr-1" /> Evening
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:00 PM</button> <button class="btn btn-sm btn-info my-2">05:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">05:30 PM</button> <button class="btn btn-sm btn-info my-2">06:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">06:30 PM</button> <button class="btn btn-sm btn-info my-2">07:00 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 py-3">
+                                        <img src="images/calender icons/night.png" class="mr-1" /> Night
+                                    </div>
+                                    <div class="col-lg-9 py-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:00 PM</button> <button class="btn btn-sm btn-info my-2">08:30 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">08:30 PM</button> <button class="btn btn-sm btn-info my-2">09:00 PM</button>
+                                            </div>
+                                            <div class="col-lg-4 col-4">
+                                                <button class="btn btn-sm btn-info my-2">09:00 PM</button> <button class="btn btn-sm btn-info my-2">09:30 PM</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 group-end">
+                                    <a class="btn btn-info btnPrevious">Previous</a>
+                                    <a class="btn btn-info btnSubmit">Submit</a>
+                                </div>
+                                <!--/. form element wrap -->
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-xl-4"></div>
             </div>
         </div>
 
@@ -224,12 +548,15 @@
                             <h4>Mr. Jigar Shah</h4>
                             <h6>Expertise in Companies Act Labor Laws</h6>
                             <h6>9 years experience overall</h6>
+                            <br/>
+
                             <ul>
                                 <li>Service 1</li>
                                 <li>Service 2</li>
                                 <li>Service 3</li>
                             </ul>
-                            <br/><br/>
+                            <!--
+                           <br/>
 
                             <label>Calender Time: </label><br/>
                             <input type="datetime-local" value="2000-07-01T12:00" />
@@ -253,7 +580,7 @@
                                              </option>
                                      </select>
                             <br/><br/>
-
+                             -->
 
                         </div>
                         <div class="col-lg-4 otherinfo">
@@ -275,9 +602,6 @@
 
 
 
-
-
-
     <!-- footer code start -->
     <div class="footer p-2 bg-dark text-white text-center">
         © 2019 VA. All rights reserved
@@ -289,6 +613,17 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btnNext').click(function() {
+                $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+            });
+
+            $('.btnPrevious').click(function() {
+                $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+            });
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

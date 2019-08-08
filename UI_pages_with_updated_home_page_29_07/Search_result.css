@@ -1,0 +1,212 @@
+/* home page searchboxes code style start */
+
+#searchboxes .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid 1px #ccc9c9;
+    border-radius: none;
+}
+
+#searchboxes .icon {
+    padding: 10px;
+    background: #ffffff;
+    color: #9e9797;
+    min-width: 50px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#searchboxes .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+#searchboxes .input-container:focus {
+    border: 2px solid gray;
+    border-radius: none;
+}
+
+#searchboxes .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#searchboxes .btn:hover {
+    opacity: 1;
+}
+
+
+/* search result style start */
+
+#filtermenu .container-fluid {
+    background: #C2A061;
+    padding: 0;
+}
+
+#filtermenu select {
+    background: white;
+    font-weight: 500;
+    color: #C2A061;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+#individualVA {
+    background: #E8E8E8;
+}
+
+#individualVA .indiva {
+    background: white;
+    margin: 25px 0px;
+}
+
+#individualVA .photo img {
+    margin: auto;
+    display: block;
+}
+
+#individualVA .maininfo {
+    text-align: center;
+}
+
+#individualVA .maininfo h4 {
+    color: #00CEFF;
+}
+
+#individualVA .maininfo h6 {
+    margin-bottom: 0.1rem;
+}
+
+#individualVA .maininfo ul {
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+#individualVA .maininfo ul li {
+    display: inline;
+    margin: 0 5px;
+    background: #E8E8E8;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#individualVA .otherinfo {
+    text-align: center;
+}
+
+#individualVA .customcolor {
+    background: #00CEFF;
+    border: #00CEFF;
+    margin: 20px;
+}
+
+#individualVA select {
+    background: white;
+    font-weight: 500;
+    color: #C2A061;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#individualVA label {
+    font-weight: 500;
+}
+
+
+/* search result style end */
+
+
+/*
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+        html {
+            box-sizing: border-box;
+            font-weight: 300;
+        }
+         
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            position: relative;
+            box-sizing: inherit;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        #demo p {
+            min-height: 120px;
+        }
+        */
+
+#demo .input-group {
+    justify-content: flex-end;
+    margin-bottom: .5em !important;
+}
+
+#demo .input-group .btn {
+    border-radius: 0;
+    margin-right: .5em;
+    color: #fff !important;
+    width: 100px;
+}
+
+
+/*
+        #demo .nav-tabs,
+        #demo .tab-content {
+             max-width: 50%; 
+        }
+        */
+
+#demo .nav-tabs .nav-item a {
+    border-radius: 0;
+    /* background-color: #fff; */
+    border: none;
+}
+
+#demo .nav-tabs .nav-item .active {
+    border-radius: 0;
+    /* background-color: #eee; */
+    border: none;
+}
+
+#demo .tab-content .tab-pane {
+    padding: 1em;
+    /* background-color: #eee; */
+}
+
+
+/*
+        .btn-info1 {
+            background: #E8E8E8;
+            border: #E8E8E8;
+            color: black;
+        } */
+
+#individualVA .btn-info {
+    color: #fff;
+    background-color: #00CEFF;
+    border-color: #00CEFF;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    text-decoration: none;
+}
