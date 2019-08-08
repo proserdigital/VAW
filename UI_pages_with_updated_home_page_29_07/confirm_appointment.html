@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="customstyle.css" />
+    <link rel="stylesheet" href="confirm_appointment.css" />
     <title>VA-Confirm Appointment Page</title>
 
 </head>
@@ -29,10 +31,13 @@
                             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Search_result.html">Search Result</a>
+                            <a class="nav-link" href="Search_result.html">List of Consultant</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="confirm_appointment.html">Confirm Booking</a>
+                            <a class="nav-link" href="confirm_appointment.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="viewprofile.html">View Profile</a>
                         </li>
 
                     </ul>
@@ -50,9 +55,108 @@
     <!-- confirmbody code start-->
     <div id="confirm_body">
 
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-4">
+                    <h3>Confirm Appointment</h3>
+                </div>
+                <div class="col-lg-12 py-5">
+                    <div class="vadetails" class="py-4">
+                        <div class="row px-4 border-bottom">
+                            <div class="col-lg-6 py-3">
+
+                                <h6> <i class="fa fa-calendar pr-1" aria-hidden="true"></i> On Jul 30,2019</h6>
+                                <a href="#.">Change Date & Time</a>
+                            </div>
+                            <div class="col-lg-6 py-3">
+                                <h6><i class="fa fa-clock-o pr-1" aria-hidden="true"></i>At 3:00 PM</h6>
+                            </div>
+                        </div>
+                        <div class="row px-4  border-bottom">
+                            <div class="col-lg-4 py-3">
+                                <img src="images/Vishal.png" class="img-fluid" />
+
+                            </div>
+                            <div class="col-lg-8 py-3">
+                                <h5>Mr. Vishal Joshi</h5>
+                                <P>SPECIALTY IS DIRECT TAXATION AND AUDITING.</P>
+                                <p>TAX PLANNING WHILE FOCUSING ON MAXIMIZING THE PROFITABILITY.</p>
+
+                            </div>
+                        </div>
+                        <div class="row px-4">
+                            <div class="col-lg-4 py-3">
+                                <img src="images/HSA-original.png" class="img-fluid" />
+
+                            </div>
+                            <div class="col-lg-8 py-3">
+                                <h5> Hemant Shah & Associates,Pune.</h5>
+                                <P> Shop No. 304, Jai Ganesh Vishwa, Vishrantwadi Square, Airport Road, Pune, Maharashtra 411015</P>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <a href="#." class="m-2 d-block">Go back to my results</a>
+
+                    <!--<div class="col-lg-6 py-5"> </div> -->
+
+                    <form method="GET" id="confirmappointFrom" class="my-5">
+                        <!--
+                        <div class="form-group">
+                            <label class="font-weight-bold">AS Name <span class="text-danger">*</span></label>
+                            <input type="text" name="signupusername" id="asname" class="form-control" placeholder="Choose your user name" pattern="^[a-zA-Z]+(\s[a-zA-Z]+)?$" title="Aplhabets allowed only" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Email ID <span class="text-danger">*</span></label>
+                            <input type="email" name="signupemail" id="asemail" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter valid mail" required placeholder="Enter valid email">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Mobile Number <span class="text-danger">*</span></label>
+                            <input type="text" name="signupphone" id="asphone" class="form-control" placeholder="0000000000" pattern="^\d{10}$" title="enter valid mobile no" placeholder="Enter valid mobile number" required>
+                        </div>
+                        -->
+                        <div class="form-group">
+                            <input type="submit" name="signupsubmit" value="Confirm" class="btn btn-block btn-primary customcolor" id="sub">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- confirmbody code end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form method="post" id="forgotpassForm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">We have sent you an OTP on +919850940892
+
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>OTP <span class="text-danger">*</span></label>
+                            <input type="text" name="otp" id="otp1" class="form-control" placeholder="Enter OTP here to verify..." required>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="forgotPass" class="btn btn-primary customcolor">Book Appointment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
 
     <!-- footer code start -->
     <div class="footer p-2 bg-dark text-white text-center">
@@ -65,6 +169,19 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            /*
+               $("#sub").click(function() {
+                    alert((($("#asname").val() != "") && ($("#asemail").val() != "") && ($("#asphone").val() != "")));
+                   if ((($("#asname").val() != "") && ($("#asemail").val() != "") && ($("#asphone").val() != ""))) {
+                       event.preventDefault();
+                       $('#forgotPass').modal('show');
+                   }
+
+               });    */
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
