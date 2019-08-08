@@ -1,0 +1,17 @@
+/* confirm appointment style start */
+
+#confirm_body {
+    background: #E8E8E8;
+}
+
+#confirm_body .vadetails {
+    background: white;
+}
+
+#confirm_body .customcolor {
+    background: #00CEFF;
+    border: none;
+}
+
+
+/* confirm appointment style end */
